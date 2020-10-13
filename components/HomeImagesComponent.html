@@ -1,0 +1,1036 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>test-front-end-suplos documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">test-front-end-suplos documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomeImagesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/home-images/home-images.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Componente principar de la carga de las imagenes</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home-images</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home-images.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home-images.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog">dialog</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#subscription">subscription</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fetchAllImages">fetchAllImages</a>
+                            </li>
+                            <li>
+                                <a href="#fetchImagesByCategory">fetchImagesByCategory</a>
+                            </li>
+                            <li>
+                                <a href="#fetchImagesBySearch">fetchImagesBySearch</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog">openDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(store: Store<AppstateWithImage>, dialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/home-images/home-images.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor del componente</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store&lt;AppstateWithImage&gt;</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchAllImages"></a>
+                    <span class="name">
+                        <b>
+                            fetchAllImages
+                        </b>
+                        <a href="#fetchAllImages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchAllImages()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/home-images/home-images.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo  que consulta todas las imagenes</p>
+</div>
+
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">fetchAllImages()</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchImagesByCategory"></a>
+                    <span class="name">
+                        <b>
+                            fetchImagesByCategory
+                        </b>
+                        <a href="#fetchImagesByCategory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchImagesByCategory(category: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/home-images/home-images.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que consulta las imagennes por el filtro de categorias y guarda en el store de la aplicación</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>category</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">fetchImagesByCategory(science)</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchImagesBySearch"></a>
+                    <span class="name">
+                        <b>
+                            fetchImagesBySearch
+                        </b>
+                        <a href="#fetchImagesBySearch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fetchImagesBySearch(q: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/home-images/home-images.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Metodo que consulta las imagennes por el filtro de busqueda y guarda en el store de la aplicación</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>q</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">fetchImagesBySearch(futbol)</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
+                            ngOnDestroy
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/home-images/home-images.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Ciclo de vida del conponente que destruye las suscripciones</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialog"></a>
+                    <span class="name">
+                        <b>
+                            openDialog
+                        </b>
+                        <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialog(image: <a href="../interfaces/Hit.html">Hit</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/home-images/home-images.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Método que abre el dialog</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>image</td>
+                                    <td>
+                                                <code><a href="../interfaces/Hit.html" target="_self" >Hit</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <b>Example :</b>
+                        <div>
+                            <pre class="line-numbers"><code class="language-html">openDialog({  &amp;quot;id&amp;quot;: 5638016,
+&amp;quot;pageURL&amp;quot;: &amp;quot;&lt;a href=&quot;https://pixabay.com/illustrations/girl-boy-muslim-hijab-islam-5638016/&amp;quot;&quot;&gt;https://pixabay.com/illustrations/girl-boy-muslim-hijab-islam-5638016/&amp;quot;&lt;/a&gt;,
+&amp;quot;type&amp;quot;: &amp;quot;illustration&amp;quot;,
+&amp;quot;tags&amp;quot;: &amp;quot;girl, boy, muslim&amp;quot;,
+&amp;quot;previewURL&amp;quot;: &amp;quot;&lt;a href=&quot;https://cdn.pixabay.com/photo/2020/10/08/13/47/girl-5638016_150.jpg&amp;quot;&quot;&gt;https://cdn.pixabay.com/photo/2020/10/08/13/47/girl-5638016_150.jpg&amp;quot;&lt;/a&gt;,
+&amp;quot;previewWidth&amp;quot;: 150,
+&amp;quot;previewHeight&amp;quot;: 95,
+&amp;quot;webformatURL&amp;quot;: &amp;quot;&lt;a href=&quot;https://pixabay.com/get/53e6d64b4a53aa14f1dc84609629347f1436dde2544c704f752d7ed79448c750_640.jpg&amp;quot;&quot;&gt;https://pixabay.com/get/53e6d64b4a53aa14f1dc84609629347f1436dde2544c704f752d7ed79448c750_640.jpg&amp;quot;&lt;/a&gt;,
+&amp;quot;webformatWidth&amp;quot;: 640,
+&amp;quot;webformatHeight&amp;quot;: 404,
+&amp;quot;largeImageURL&amp;quot;: &amp;quot;&lt;a href=&quot;https://pixabay.com/get/53e6d64b4a53aa14f6da8c7dda79367d143ed7e654566c48732f79d1944ec05ab0_1280.jpg&amp;quot;&quot;&gt;https://pixabay.com/get/53e6d64b4a53aa14f6da8c7dda79367d143ed7e654566c48732f79d1944ec05ab0_1280.jpg&amp;quot;&lt;/a&gt;,
+&amp;quot;imageWidth&amp;quot;: 5937,
+&amp;quot;imageHeight&amp;quot;: 3744,
+&amp;quot;imageSize&amp;quot;: 1387329,
+&amp;quot;views&amp;quot;: 4304,
+&amp;quot;downloads&amp;quot;: 4132,
+&amp;quot;favorites&amp;quot;: 47,
+&amp;quot;likes&amp;quot;: 58,
+&amp;quot;comments&amp;quot;: 36,
+&amp;quot;user_id&amp;quot;: 18371568,
+&amp;quot;user&amp;quot;: &amp;quot;BPHOTOGRAPHY&amp;quot;,
+&amp;quot;userImageURL&amp;quot;: &amp;quot;&lt;a href=&quot;https://cdn.pixabay.com/user/2020/10/09/12-25-34-235_250x250.jpg&amp;quot;%7D&quot;&gt;https://cdn.pixabay.com/user/2020/10/09/12-25-34-235_250x250.jpg&amp;quot;}&lt;/a&gt;)</code></pre>
+                        </div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialog"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            dialog</b>
+                            <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatDialog</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/home-images/home-images.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>dialog de material angular</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="subscription"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            subscription</b>
+                            <a href="#subscription"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Subscription[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/home-images/home-images.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>variable para guardar las suscripciones y destruirlas al cierre del componente</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnDestroy } from &#x27;@angular/core&#x27;;
+import { Store } from &#x27;@ngrx/store&#x27;;
+import { isEqual } from &#x27;lodash&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+
+import { HomeImagesService } from &#x27;./services/home-images.service&#x27;;
+import { fetchImagesAction, fetchImagesByCategoryFilterAction, fetchImagesBySearchFilterAction } from &#x27;./store/actions/home-images.action&#x27;;
+import { AppstateWithImage } from &#x27;./store/reducers&#x27;;
+import { Category } from &#x27;../core/entity/header&#x27;;
+import { SarchState } from &#x27;../core/store/state/seacrh.state&#x27;;
+import { fetchHeaderCategoryFilterAction, fetchHeaderSearchFilterAction } from &#x27;../core/store/actions/header.actions&#x27;;
+import { CategoryState } from &#x27;../core/store/state/category.state&#x27;;
+import { Hit } from &#x27;./entity/image&#x27;;
+import { ModalImageComponent } from &#x27;./components/modal-image/modal-image.component&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+
+/**
+ * Componente principar de la carga de las imagenes
+ */
+@Component({
+  selector: &#x27;app-home-images&#x27;,
+  templateUrl: &#x27;./home-images.component.html&#x27;,
+  styleUrls: [&#x27;./home-images.component.css&#x27;]
+})
+export class HomeImagesComponent implements OnDestroy {
+  /**
+   * variable para guardar las suscripciones y destruirlas al cierre del componente
+   */
+  public subscription: Subscription[] &#x3D; [];
+  /**
+   * @ignore
+   */
+  public header$: any;
+  /**
+   * @ignore
+   */
+  public image$: any;
+  /**
+   * @ignore
+   */
+  public images: Hit[] &#x3D; [];
+  /**
+   * @ignore
+   */
+  public isLoading: boolean;
+  /**
+   * @ignore
+   */
+  public nameFilter: string;
+
+  /**
+   * Constructor del componente
+   * @param Store&lt;AppstateWithImage&gt; store es el store  de la aplicacion con el estado actual
+   * @param MatDialog dialog instancia del dialog de material para visualizarla imagen completa
+   */
+  constructor(
+    /**
+     * store de la aplicacion
+     */
+    private store: Store&lt;AppstateWithImage&gt;,
+    /**
+     * dialog de material angular
+     */
+    public dialog: MatDialog) {
+
+    this.header$ &#x3D; this.store.select(&#x27;header&#x27;);
+    this.image$ &#x3D; this.store.select(&#x27;imageObject&#x27;);
+
+    const categoryInital: Category &#x3D; {
+      name: &#x27;Todas las categorias&#x27;, value: &#x27;all&#x27;, isActive: true
+    };
+    this.nameFilter &#x3D; categoryInital.name;
+
+    let category: Category &#x3D; categoryInital;
+    let search &#x3D; &#x27;&#x27;;
+
+    this.subscription.push(
+      this.header$.subscribe(result &#x3D;&gt; {
+        if (!isEqual(category.name, result.category.name) &amp;&amp; result.category.name !&#x3D;&#x3D; &#x27;Todas las categorias&#x27;) {
+          category &#x3D; result.category;
+          this.nameFilter &#x3D; category.name;
+          search &#x3D; &#x27;&#x27;;
+          const newStateFilterSearch: SarchState &#x3D; { search };
+          this.store.dispatch(fetchHeaderSearchFilterAction(newStateFilterSearch));
+          this.fetchImagesByCategory(category.value);
+        } else if (!isEqual(search, result.search) &amp;&amp; result.search !&#x3D;&#x3D; &#x27;&#x27;) {
+          search &#x3D; result.search;
+          this.nameFilter &#x3D; search;
+          category &#x3D; categoryInital;
+          const newStateFilterCategory: CategoryState &#x3D; { category };
+          this.store.dispatch(fetchHeaderCategoryFilterAction(newStateFilterCategory));
+          this.fetchImagesBySearch(search);
+        }
+
+        if (result.search &#x3D;&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; result.category.name &#x3D;&#x3D;&#x3D; &#x27;Todas las categorias&#x27;) {
+          this.fetchAllImages();
+          this.nameFilter &#x3D; result.category.name;
+        }
+      })
+    );
+
+    this.subscription.push(
+      this.image$.subscribe(result &#x3D;&gt; {
+        this.isLoading &#x3D; result.ui.isLoadingImageReducer;
+        this.images &#x3D; result.imageObject.hits;
+      })
+    );
+  }
+
+  /**
+   * Método que abre el dialog
+   * @param Hit image objeo de la imagen seleccionada para visualizar en dialog
+   * @example  openDialog({  &quot;id&quot;: 5638016,
+   *         &quot;pageURL&quot;: &quot;https://pixabay.com/illustrations/girl-boy-muslim-hijab-islam-5638016/&quot;,
+   *         &quot;type&quot;: &quot;illustration&quot;,
+   *         &quot;tags&quot;: &quot;girl, boy, muslim&quot;,
+   *         &quot;previewURL&quot;: &quot;https://cdn.pixabay.com/photo/2020/10/08/13/47/girl-5638016_150.jpg&quot;,
+   *         &quot;previewWidth&quot;: 150,
+   *         &quot;previewHeight&quot;: 95,
+   *         &quot;webformatURL&quot;: &quot;https://pixabay.com/get/53e6d64b4a53aa14f1dc84609629347f1436dde2544c704f752d7ed79448c750_640.jpg&quot;,
+   *         &quot;webformatWidth&quot;: 640,
+   *         &quot;webformatHeight&quot;: 404,
+   *         &quot;largeImageURL&quot;: &quot;https://pixabay.com/get/53e6d64b4a53aa14f6da8c7dda79367d143ed7e654566c48732f79d1944ec05ab0_1280.jpg&quot;,
+   *         &quot;imageWidth&quot;: 5937,
+   *         &quot;imageHeight&quot;: 3744,
+   *         &quot;imageSize&quot;: 1387329,
+   *         &quot;views&quot;: 4304,
+   *         &quot;downloads&quot;: 4132,
+   *         &quot;favorites&quot;: 47,
+   *         &quot;likes&quot;: 58,
+   *         &quot;comments&quot;: 36,
+   *         &quot;user_id&quot;: 18371568,
+   *         &quot;user&quot;: &quot;BPHOTOGRAPHY&quot;,
+   *         &quot;userImageURL&quot;: &quot;https://cdn.pixabay.com/user/2020/10/09/12-25-34-235_250x250.jpg&quot;})
+   */
+  openDialog(image: Hit): void {
+    const dialogRef &#x3D; this.dialog.open(ModalImageComponent, {
+      width: &#x27;90%&#x27;,
+      data: image.largeImageURL
+    });
+
+  }
+  /**
+   * Metodo que consulta las imagennes por el filtro de busqueda y guarda en el store de la aplicación
+   * @param string q es l parametro query que va a consultar por el filtro de busqueda
+   * @example fetchImagesBySearch(futbol)
+   */
+  fetchImagesBySearch(q: string): void {
+    const searchFilter &#x3D; { q };
+    this.store.dispatch(fetchImagesBySearchFilterAction(searchFilter));
+  }
+
+  /**
+   * Metodo que consulta las imagennes por el filtro de categorias y guarda en el store de la aplicación
+   * @param string category  parametro que va a consultar por el filtro de categorias
+   * @example fetchImagesByCategory(science)
+   */
+  fetchImagesByCategory(category: string): void {
+    const categoryFilter &#x3D; { category };
+    this.store.dispatch(fetchImagesByCategoryFilterAction(categoryFilter));
+  }
+
+  /**
+   * Metodo  que consulta todas las imagenes
+   * @example fetchAllImages()
+   */
+  fetchAllImages(): void {
+    this.store.dispatch(fetchImagesAction());
+  }
+
+  /**
+   * Ciclo de vida del conponente que destruye las suscripciones
+   */
+  ngOnDestroy(): void {
+    this.subscription.forEach(subscription &#x3D;&gt; subscription.unsubscribe);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot; *ngIf&#x3D;&quot;!isLoading&quot;&gt;
+  &lt;div class&#x3D;&quot;col-12&quot;&gt;
+    &lt;h1 *ngIf&#x3D;&quot;images.length &gt; 0&quot;&gt;{{nameFilter}}&lt;/h1&gt;
+    &lt;h1 *ngIf&#x3D;&quot;images.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;No se encontraron resultados para: {{nameFilter}}&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-lg-3 col-12 col-md-4 mt-2&quot; *ngFor&#x3D;&#x27;let image of images&#x27;&gt;
+    &lt;mat-card class&#x3D;&quot;container-card&quot;&gt;
+      &lt;mat-card-header&gt;
+        &lt;mat-card-title&gt;Tipo de imagen:&lt;/mat-card-title&gt;
+        &lt;mat-card-subtitle&gt;{{image.type}}&lt;/mat-card-subtitle&gt;
+      &lt;/mat-card-header&gt;
+      &lt;div class&#x3D;&quot;container-img-card mt-2&quot;&gt;
+        &lt;img mat-card-image class&#x3D;&quot;image-card&quot; [src]&#x3D;&quot;image.largeImageURL&quot; alt&#x3D;&quot;Photo of a Shiba Inu&quot;&gt;
+      &lt;/div&gt;
+      &lt;mat-card-actions&gt;
+        &lt;div class&#x3D;&quot;mat-flex-container&quot;&gt;
+          &lt;div class&#x3D;&quot;mat-button-container&quot;&gt;
+            &lt;button mat-raised-button mat-mini-fab color&#x3D;&quot;accent&quot; (click)&#x3D;&quot;openDialog(image)&quot;&gt;
+              &lt;mat-icon&gt;settings_overscan&lt;/mat-icon&gt;
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/mat-card-actions&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;row justify-content-center heigth-total&quot; *ngIf&#x3D;&quot;isLoading&quot;&gt;
+  &lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-4 align-self-center&quot;&gt;
+      &lt;mat-spinner [diameter]&#x3D;&quot;80&quot; mode&#x3D;&quot;indeterminate&quot;&gt;&lt;/mat-spinner&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home-images.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.container-card {
+  width: 100%;
+}
+
+.container-img-card {
+  width: 100%;
+  height: 150px;
+}
+
+.image-card {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.mat-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mat-button-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.heigth-total{
+  height: 80vh;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row" *ngIf="!isLoading">  <div class="col-12">    <h1 *ngIf="images.length > 0">{{nameFilter}}</h1>    <h1 *ngIf="images.length === 0">No se encontraron resultados para: {{nameFilter}}</h1>  </div>  <div class="col-lg-3 col-12 col-md-4 mt-2" *ngFor=\'let image of images\'>    <mat-card class="container-card">      <mat-card-header>        <mat-card-title>Tipo de imagen:</mat-card-title>        <mat-card-subtitle>{{image.type}}</mat-card-subtitle>      </mat-card-header>      <div class="container-img-card mt-2">        <img mat-card-image class="image-card" [src]="image.largeImageURL" alt="Photo of a Shiba Inu">      </div>      <mat-card-actions>        <div class="mat-flex-container">          <div class="mat-button-container">            <button mat-raised-button mat-mini-fab color="accent" (click)="openDialog(image)">              <mat-icon>settings_overscan</mat-icon>            </button>          </div>        </div>      </mat-card-actions>    </mat-card>  </div></div><div class="row justify-content-center heigth-total" *ngIf="isLoading">  <div class="col-lg-2 col-md-3 col-4 align-self-center">      <mat-spinner [diameter]="80" mode="indeterminate"></mat-spinner>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'FilterCategoriesComponent', 'selector': 'app-filter-categories'},{'name': 'FilterSearchComponent', 'selector': 'app-filter-search'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeImagesComponent', 'selector': 'app-home-images'},{'name': 'ModalImageComponent', 'selector': 'app-modal-image'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeImagesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeImagesComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
